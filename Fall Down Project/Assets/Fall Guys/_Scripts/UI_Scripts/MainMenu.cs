@@ -50,12 +50,6 @@ public class MainMenu : MonoBehaviourPunCallbacks
             //ads
         else
             return;
-
-       
-       
-      
-      
-        
     }
        
     void Update()

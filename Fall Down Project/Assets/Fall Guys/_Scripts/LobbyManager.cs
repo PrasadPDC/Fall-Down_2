@@ -146,7 +146,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         yield return new WaitForSeconds(3);
         int level = Random.Range(2, 5);
-        PhotonNetwork.LoadLevel(level);
+        PhotonNetwork.LoadLevel(2);
     }
     IEnumerator InRoomSceneLoad()
     {

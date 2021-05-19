@@ -54,12 +54,12 @@ public class EnemyAI : MonoBehaviourPun
                 }                
             }
 
-            if (this.transform.position.y <= -15f)
-            {
-                Destroy(this.gameObject);
-                PhotonNetwork.Instantiate(GameManager.instace.EnemyPrefab.name, GameManager.instace.InitialRespawnpos.transform.position, Quaternion.identity, 0);
-                GetComponent<Animator>().Play("run");
-            }
+            //if (this.transform.position.y <= -15f)
+            //{
+            //    Destroy(this.gameObject);
+            //    PhotonNetwork.Instantiate(GameManager.instace.EnemyPrefab.name, GameManager.instace.InitialRespawnpos.transform.position, Quaternion.identity, 0);
+            //    GetComponent<Animator>().Play("run");
+            //}
         }
     }
    

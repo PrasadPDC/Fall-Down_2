@@ -34,7 +34,7 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
     bool isGrounded;
     Vector3 smoothdamp;
     Quaternion smoothRotation;
-    int i = 0;
+  
     float x; float y;
     Animator animator;
     AudioSource audios;
@@ -98,8 +98,8 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
 
             float p = Mathf.SmoothDamp(0, FixedTouchField.instance.TouchDist.y, ref smoothDampReference, Time.deltaTime*smoothDampY);
             float q = Mathf.SmoothDamp(0, FixedTouchField.instance.TouchDist.x, ref smoothDampReference, Time.deltaTime*smoothDampX);
-            thirdpersonCamera.GetComponent<CinemachineFreeLook>().m_YAxis.Value +=p;
-            thirdpersonCamera.GetComponent<CinemachineFreeLook>().m_XAxis.Value -= q;
+            thirdpersonCamera.GetComponent<CinemachineFreeLook>().m_YAxis.Value +=-p;
+            thirdpersonCamera.GetComponent<CinemachineFreeLook>().m_XAxis.Value -=-q;
 
             thirdpersonCamera.GetComponent<CinemachineFreeLook>().m_YAxis.m_InputAxisName = null;
             thirdpersonCamera.GetComponent<CinemachineFreeLook>().m_XAxis.m_InputAxisName = null;
@@ -138,13 +138,17 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
         if (this.transform.position.y <= -15f)
         {
             Destroy(this.gameObject);
-            if (transform.position.z >= GameManager.instace.NextRespawnpos.transform.position.z)
+          
+            if (transform.position.z >= GameManager.instace.PlayerRespawnpos[2].transform.position.z)
             {
-                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.NextRespawnpos.transform.position, Quaternion.identity, 0);
-                i++;
+                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.PlayerRespawnpos[2].transform.position, Quaternion.identity, 0);
+            }
+            else if (transform.position.z >= GameManager.instace.PlayerRespawnpos[1].transform.position.z)
+            {
+                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.PlayerRespawnpos[1].transform.position, Quaternion.identity, 0);
             }
             else
-                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.InitialRespawnpos.transform.position, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.PlayerRespawnpos[0].transform.position, Quaternion.identity, 0);
 
         }
 

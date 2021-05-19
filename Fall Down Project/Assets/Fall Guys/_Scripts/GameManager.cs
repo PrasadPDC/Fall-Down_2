@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] PlayerInstantiation;
     public GameObject WinPanel;
     public TMP_Text WinnernameText;
-    public GameObject InitialRespawnpos;
-    public GameObject NextRespawnpos;
+    //public GameObject InitialRespawnpos;
+    public GameObject[] PlayerRespawnpos;
     public bool firstPlayer = false;
     public TMP_Text GameStartCountDowntext;
     public int GameStartCountDown;
@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
         firstPlayer = false;
         CountDownOver = false;
         PlayerInstantiation = GameObject.FindGameObjectsWithTag("PlayerInstacePos");
-        InitialRespawnpos = GameObject.FindGameObjectWithTag("RespawnPos");
-        NextRespawnpos = GameObject.FindGameObjectWithTag("NextRespawnPos");
+        //InitialRespawnpos = GameObject.FindGameObjectWithTag("RespawnPos");
+        PlayerRespawnpos = GameObject.FindGameObjectsWithTag("NextRespawnPos");
 
         starttime = GameStartCountDown;
 
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            PhotonNetwork.Instantiate(PlayerPrefab.name, InitialRespawnpos.transform.position, Quaternion.identity, 0);
+            PhotonNetwork.Instantiate(PlayerPrefab.name,PlayerRespawnpos[0].transform.position, Quaternion.identity, 0);
             PlayerPrefs.SetInt("ShowIntersticialAds", 0);
         }
 
