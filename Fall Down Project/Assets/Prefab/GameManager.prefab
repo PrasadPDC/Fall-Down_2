@@ -1286,8 +1286,7 @@ MonoBehaviour:
   PlayerInstantiation: []
   WinPanel: {fileID: 1799874502816992335}
   WinnernameText: {fileID: 4142354080477217763}
-  InitialRespawnpos: {fileID: 0}
-  NextRespawnpos: {fileID: 0}
+  PlayerRespawnpos: []
   firstPlayer: 0
   GameStartCountDowntext: {fileID: 2319858891672873426}
   GameStartCountDown: 5

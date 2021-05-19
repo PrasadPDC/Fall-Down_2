@@ -28,7 +28,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             loding.gameObject.SetActive(false);
 
-
         }
         else
         {
@@ -146,7 +145,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         yield return new WaitForSeconds(3);
         int level = Random.Range(2, 5);
-        PhotonNetwork.LoadLevel(2);
+        PhotonNetwork.LoadLevel(4);
     }
     IEnumerator InRoomSceneLoad()
     {
