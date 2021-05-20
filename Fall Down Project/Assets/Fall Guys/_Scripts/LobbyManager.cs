@@ -139,7 +139,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     private void Update()
     {
         Playbtn.SetActive(PhotonNetwork.IsMasterClient);
-        waitingforOtherPlayer_text.text = "Waiting For Players: " + PhotonNetwork.PlayerList.Count();
+        waitingforOtherPlayer_text.text = "Please Wait...";
     }
     IEnumerator SceneLoad()
     {

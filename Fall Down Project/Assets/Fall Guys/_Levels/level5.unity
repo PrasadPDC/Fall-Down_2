@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 0.27
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: eea6dc32b86944868a305f6c94f8d7e4, type: 2}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1353524616}
-  m_IndirectSpecularColor: {r: 0.39477023, g: 0.5454441, b: 0.6278312, a: 1}
+  m_IndirectSpecularColor: {r: 0.6609567, g: 0.9089586, b: 1.0468524, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1025,7 +1025,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d8abd3ace18b12445b979702dbe768ef, type: 2}
+      objectReference: {fileID: 2100000, guid: 1aed17312bf19834daf8ad636e42a5d0, type: 2}
     - target: {fileID: -3838735271085949761, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1350,12 +1350,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5261401d7f366124fa92b31ce9393f77, type: 2}
+      objectReference: {fileID: 2100000, guid: 01e2b73df2c738844889d4781580f8d3, type: 2}
     - target: {fileID: -28831839141222879, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6f3303ebd6fb3604497c8a0e7473a8ec, type: 2}
+      objectReference: {fileID: 2100000, guid: 16451a812f1d8dc4c9df6143376bec73, type: 2}
     - target: {fileID: 89888323556654745, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_Layer
@@ -1655,7 +1655,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3e05ea258a193b0449e127c21d6152b6, type: 2}
+      objectReference: {fileID: 2100000, guid: df8cd6da0276c234f858f0540ad1a632, type: 2}
     - target: {fileID: 4502666057252699883, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2702,7 +2702,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6f6c88bee858fa1428d10d9b6892bd4d, type: 2}
+  - {fileID: 2100000, guid: 01e2b73df2c738844889d4781580f8d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4617,7 +4617,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6f6c88bee858fa1428d10d9b6892bd4d, type: 2}
+  - {fileID: 2100000, guid: 01e2b73df2c738844889d4781580f8d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4814,7 +4814,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934690588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
