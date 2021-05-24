@@ -189,6 +189,8 @@ MonoBehaviour:
   agent: {fileID: 0}
   destination: []
   EnemyNameText: {fileID: 6209708156713454285}
+  mat: {fileID: 2100000, guid: 601ce9f3f0016474e98aaebde831db27, type: 2}
+  render: {fileID: 4443292323990975773}
   canMove: 0
 --- !u!136 &1583396347178976341
 CapsuleCollider:
@@ -1274,7 +1276,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cabddcad930d94142afef944a4254b31, type: 2}
+      objectReference: {fileID: 2100000, guid: 601ce9f3f0016474e98aaebde831db27, type: 2}
     - target: {fileID: 8411149807716170120, guid: b9aa391cf449d7e4e85140dd596d85e0,
         type: 3}
       propertyPath: m_Materials.Array.data[3]
@@ -1283,6 +1285,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: b9aa391cf449d7e4e85140dd596d85e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9aa391cf449d7e4e85140dd596d85e0, type: 3}
+--- !u!137 &4443292323990975773 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8411149807716170120, guid: b9aa391cf449d7e4e85140dd596d85e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5265788767770758293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5663680607772388222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b9aa391cf449d7e4e85140dd596d85e0,

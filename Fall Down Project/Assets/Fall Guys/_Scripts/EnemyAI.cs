@@ -7,21 +7,21 @@ public class EnemyAI : MonoBehaviourPun
 { 
     public static EnemyAI instance;
     [HideInInspector]public NavMeshAgent agent;
-    public GameObject[] destination;
+    [SerializeField] private GameObject[] destination;
     private Rigidbody rb; int i = 0;
     [HideInInspector] public TMP_Text EnemyNameText;
-    public bool canMove;
-    
+    [SerializeField] private Material mat;
+    [SerializeField] private SkinnedMeshRenderer render;
+    public bool canMove;  
+    Color tempcolor;
 
-   
     void Start()
     {
-
+        mat = render.materials[0];
 
         canMove = true;
         if (instance == null)
         {
-
             instance = this;
         }
 
@@ -30,12 +30,13 @@ public class EnemyAI : MonoBehaviourPun
         rb = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
         agent.isStopped = false;
-
+        tempcolor  = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1);
     }
    
     private void Update()
     {
-
+        mat.color = tempcolor;
+        mat.SetColor("_EmissionColor", tempcolor);
         if (canMove && GameManager.instace.CountDownOver)
         {
 
