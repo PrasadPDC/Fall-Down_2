@@ -189,7 +189,7 @@ MonoBehaviour:
   agent: {fileID: 0}
   destination: []
   EnemyNameText: {fileID: 6209708156713454285}
-  mat: {fileID: 2100000, guid: 601ce9f3f0016474e98aaebde831db27, type: 2}
+  mat: {fileID: 0}
   render: {fileID: 4443292323990975773}
   canMove: 0
 --- !u!136 &1583396347178976341
@@ -1276,12 +1276,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 601ce9f3f0016474e98aaebde831db27, type: 2}
+      objectReference: {fileID: 2100000, guid: 1d8192348ee513f45a886b1f9ac5f08f, type: 2}
     - target: {fileID: 8411149807716170120, guid: b9aa391cf449d7e4e85140dd596d85e0,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 456f15a7588de5947832993c8e415795, type: 2}
+      objectReference: {fileID: 2100000, guid: ef37907d84e844d44a349cdf60073c8a, type: 2}
     - target: {fileID: 8411149807716170120, guid: b9aa391cf449d7e4e85140dd596d85e0,
         type: 3}
       propertyPath: m_Materials.Array.data[3]
