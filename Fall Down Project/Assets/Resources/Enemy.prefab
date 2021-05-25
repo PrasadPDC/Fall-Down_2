@@ -617,7 +617,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3660929197893272177}
-  m_LocalRotation: {x: 0.24700803, y: 0.3276432, z: -0.08917264, w: 0.9075711}
+  m_LocalRotation: {x: 0.24700806, y: 0.3276432, z: -0.089172624, w: 0.9075711}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -930,7 +930,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5305421235455232476}
-  m_LocalRotation: {x: 0.21387751, y: 0.33066612, z: -0.077212155, w: 0.9159447}
+  m_LocalRotation: {x: 0.21387753, y: 0.33066615, z: -0.07721215, w: 0.9159447}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1130,7 +1130,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8871195846651904758}
-  m_LocalRotation: {x: 0.23045892, y: 0.32921097, z: -0.08319822, w: 0.9119139}
+  m_LocalRotation: {x: 0.2304589, y: 0.32921097, z: -0.0831982, w: 0.9119139}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1279,9 +1279,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 601ce9f3f0016474e98aaebde831db27, type: 2}
     - target: {fileID: 8411149807716170120, guid: b9aa391cf449d7e4e85140dd596d85e0,
         type: 3}
-      propertyPath: m_Materials.Array.data[3]
+      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 456f15a7588de5947832993c8e415795, type: 2}
+    - target: {fileID: 8411149807716170120, guid: b9aa391cf449d7e4e85140dd596d85e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6655f8d11ac69054f9934b797ddf09e1, type: 2}
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: b9aa391cf449d7e4e85140dd596d85e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9aa391cf449d7e4e85140dd596d85e0, type: 3}

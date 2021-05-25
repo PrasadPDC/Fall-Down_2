@@ -857,6 +857,7 @@ GameObject:
   - component: {fileID: 2933852231403191859}
   - component: {fileID: 7571314409690478359}
   - component: {fileID: 4709438441626091761}
+  - component: {fileID: 7007151865261251315}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -924,6 +925,22 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Winner
+--- !u!111 &7007151865261251315
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2410715220211880624}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: cad62b387c34d434cba3fc8c62ebeacf, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: cad62b387c34d434cba3fc8c62ebeacf, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &3318867383429388757
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +952,7 @@ GameObject:
   - component: {fileID: 8362989622855412705}
   - component: {fileID: 1956334006988412714}
   - component: {fileID: 178069437942816440}
+  - component: {fileID: 2436033738702970636}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -984,7 +1002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.94509804, g: 0.011764705, b: 0.45681584, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.3119383, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1000,6 +1018,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &2436033738702970636
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318867383429388757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a732ee130dab244b808ef2a4dab2201, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5449822498764960007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1149,7 @@ GameObject:
   - component: {fileID: 5137380316967741666}
   - component: {fileID: 5584343741152111510}
   - component: {fileID: 4142354080477217763}
+  - component: {fileID: 1181032225304432075}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1235,6 +1273,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!111 &1181032225304432075
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8087097086761098270}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 1d6cc6b12e5cf1445b8c260122378297, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1d6cc6b12e5cf1445b8c260122378297, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8285864391949265987
 GameObject:
   m_ObjectHideFlags: 0
