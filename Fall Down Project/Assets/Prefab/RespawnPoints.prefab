@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8575445255513411997}
+  - component: {fileID: 5492980166786986}
   m_Layer: 0
   m_Name: SecondRespawnPos
   m_TagString: NextRespawnPos
@@ -30,6 +31,19 @@ Transform:
   m_Father: {fileID: 6531694354982102683}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5492980166786986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4474088181262844084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 33.72, y: 35.18, z: 5.16}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4552236676455767671
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,6 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4197203755683334150}
+  - component: {fileID: 8528049036601418179}
   m_Layer: 0
   m_Name: FirstRespawnPos
   m_TagString: NextRespawnPos
@@ -60,6 +75,19 @@ Transform:
   m_Father: {fileID: 6531694354982102683}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8528049036601418179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552236676455767671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 33.72, y: 35.18, z: 5.16}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5128073573410009920
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4170874576246121234}
+  - component: {fileID: 2323990811661154278}
   m_Layer: 0
   m_Name: ThirdRespawnPos (1)
   m_TagString: NextRespawnPos
@@ -90,6 +119,19 @@ Transform:
   m_Father: {fileID: 6531694354982102683}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2323990811661154278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128073573410009920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 33.72, y: 35.18, z: 5.16}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6531694354982102676
 GameObject:
   m_ObjectHideFlags: 0

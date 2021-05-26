@@ -199,7 +199,6 @@ MonoBehaviour:
   Groundpos: {fileID: 5495689761570264702}
   thirdpersonCamera: {fileID: 1027844615154810959}
   PlayerNameText: {fileID: 6209708156713454285}
-  destination: []
   PlayerUsername: 
   JumpAudioClip: {fileID: 8300000, guid: ab01201e34ab024498a21d1b17a36abb, type: 3}
   canMove: 0
@@ -298,6 +297,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 1
     Name: jump
+  - Type: 9
+    SynchronizeType: 1
+    Name: Jump
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -407,6 +409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1027844615154810962}
   - component: {fileID: 1027844615154810961}
+  - component: {fileID: 7264183244056572495}
   m_Layer: 0
   m_Name: ThirdPersonCamera
   m_TagString: Untagged
@@ -532,6 +535,36 @@ MonoBehaviour:
   - {fileID: 8095224830028225319}
   - {fileID: 548209495457599382}
   - {fileID: 7705247021604060351}
+--- !u!114 &7264183244056572495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027844615154810959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 822
+  m_IgnoreTag: Enemy
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.1
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0.1
+  m_Strategy: 0
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 1
+  m_DampingWhenOccluded: 1
+  m_OptimalTargetDistance: 0
 --- !u!1 &2192517070318182106
 GameObject:
   m_ObjectHideFlags: 0

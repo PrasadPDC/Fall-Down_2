@@ -21,7 +21,6 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
     [SerializeField] private Transform Groundpos;
     [SerializeField] private GameObject thirdpersonCamera;
     [SerializeField] private TMP_Text PlayerNameText;
-    [SerializeField] private GameObject[] destination;
     [HideInInspector] public string PlayerUsername;
     [SerializeField] private AudioClip JumpAudioClip;
     Rigidbody rb;
@@ -32,6 +31,7 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
     Joystick joystick;
     Button JumpBtn;
     bool isGrounded;
+    Vector3 respawnpoint;
     Vector3 smoothdamp;
     Quaternion smoothRotation;
   
@@ -53,8 +53,8 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
     void Start()
     {
         canMove = true;
-        //GameManager.instace.WinPanel.SetActive(false);
-        if(instance == null)
+        respawnpoint = this.transform.position;
+        if (instance == null)
         {
             instance = this;
         }
@@ -124,35 +124,11 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
         {
             rb.AddForce(Vector3.up * JumpForce * Time.fixedDeltaTime, ForceMode.Impulse);
             audios.PlayOneShot(JumpAudioClip);
-            animator.SetBool("jump", true);
-
-
+            animator.SetTrigger("Jump");
         }
-        else
-        {
-            animator.SetBool("jump", false);
-            animator.SetBool("run", false);
-
-        }
-
-        if (this.transform.position.y <= -15f)
-        {
-            Destroy(this.gameObject);
-          
-            if (transform.position.z >= GameManager.instace.PlayerRespawnpos[2].transform.position.z)
-            {
-                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.PlayerRespawnpos[2].transform.position, Quaternion.identity, 0);
-            }
-            else if (transform.position.z >= GameManager.instace.PlayerRespawnpos[1].transform.position.z)
-            {
-                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.PlayerRespawnpos[1].transform.position, Quaternion.identity, 0);
-            }
-            else
-                PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, GameManager.instace.PlayerRespawnpos[0].transform.position, Quaternion.identity, 0);
-
-        }
-
-
+     
+        if(this.transform.position.y <= -15f)
+        PlayerRespawn();
 
         Vector3 direction = new Vector3(x, 0, y);
         if (direction.magnitude >= 0.1f)
@@ -169,21 +145,31 @@ public class Playercontroller : MonoBehaviourPun,IPunObservable
         else
         {
             animator.SetBool("run", false);
-        } }
+        }
+    }
+
+    [PunRPC]
+    private void PlayerRespawn()
+    {
+        PhotonNetwork.Destroy(gameObject);
+        PhotonNetwork.Instantiate(GameManager.instace.PlayerPrefab.name, respawnpoint, Quaternion.identity, 0);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "NextRespawnPos")
+        {
+            respawnpoint = other.transform.position;
+        }
+    }
+    [PunRPC]
     public void JumpButton()
     {
         if (isGrounded)
         {
             rb.AddForce(Vector3.up * JumpForce * Time.fixedDeltaTime, ForceMode.Impulse);
-            animator.SetBool("jump", true);
+            animator.SetTrigger("Jump");
             audios.PlayOneShot(JumpAudioClip);
-
         }
-         else
-            {
-                animator.SetBool("jump", false);
-                animator.SetBool("run", false);
-            }   
     }
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {

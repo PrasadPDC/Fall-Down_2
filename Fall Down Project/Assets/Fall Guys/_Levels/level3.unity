@@ -682,7 +682,7 @@ PrefabInstance:
     - target: {fileID: -8208378094791118606, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8056817917324986991, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -752,7 +752,7 @@ PrefabInstance:
     - target: {fileID: -7087684415893314893, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -7074681897062545621, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -1117,7 +1117,7 @@ PrefabInstance:
     - target: {fileID: -4072548755889853709, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.555
+      value: 1.556
       objectReference: {fileID: 0}
     - target: {fileID: -3901992563441801604, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -1372,7 +1372,7 @@ PrefabInstance:
     - target: {fileID: -533652252134854074, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -500347768341453927, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -1602,7 +1602,7 @@ PrefabInstance:
     - target: {fileID: 773630146891940874, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -1802,7 +1802,7 @@ PrefabInstance:
     - target: {fileID: 4746283449936651735, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4868482079470348457, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -1842,7 +1842,7 @@ PrefabInstance:
     - target: {fileID: 4951007317423375810, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5537788823409409950, guid: e61c35c14aefe794f90bba57bb77a82c,
         type: 3}
@@ -2425,22 +2425,35 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.41300002, y: 0.095000006, z: 1.416}
   m_TimeToStationary: 0.5
---- !u!208 &230782409
-NavMeshObstacle:
+--- !u!65 &230782409
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230782397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.078, y: 0.095000006, z: 0.013}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.245, y: 0.095000006, z: 1.416}
-  m_TimeToStationary: 0.5
+  serializedVersion: 2
+  m_Size: {x: 0.15699996, y: 0.19081481, z: 0.026499985}
+  m_Center: {x: -0.24521065, y: 0.09531761, z: 1.4162712}
+--- !u!54 &230782410
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230782397}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &241142354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,8 +2722,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
 --- !u!4 &268955401
 Transform:
   m_ObjectHideFlags: 0
@@ -2898,8 +2911,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
 --- !u!4 &317210476
 Transform:
   m_ObjectHideFlags: 0
@@ -3107,8 +3120,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
 --- !u!4 &526322074
 Transform:
   m_ObjectHideFlags: 0
@@ -5963,8 +5976,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
 --- !u!4 &1380225345
 Transform:
   m_ObjectHideFlags: 0
@@ -6797,8 +6810,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
 --- !u!4 &1874790691
 Transform:
   m_ObjectHideFlags: 0
@@ -7232,35 +7245,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 230782384}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1973254712
-BoxCollider:
+--- !u!208 &1973254712
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973254711}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.1342857, y: 0.17724861, z: 0.009999999}
-  m_Center: {x: 0.0020587337, y: -0.003108153, z: -4.4398393e-13}
---- !u!54 &1973254713
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973254711}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.078, y: 0.095000006, z: 0.013}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.245, y: 0.095000006, z: 1.416}
+  m_TimeToStationary: 0.5
 --- !u!1 &1979118902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7560,8 +7560,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
 --- !u!4 &2079886250
 Transform:
   m_ObjectHideFlags: 0
